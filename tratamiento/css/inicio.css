@@ -1,0 +1,103 @@
+/* =============================================
+* SLIDER
+* ============================================== */
+.slide-col-1 {
+	width: 40%;
+	padding-left: 5%;
+}
+
+.slide-col-2 {
+	display: inline-flex;
+    align-self: end;
+}
+
+@media screen and (max-width: 992px) {
+	.slide-col-1 {
+		width: 50%;
+	}
+	.slide-col-2 {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.slide-col-1 {
+		padding-left: 10%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.slide-col-1 {
+		width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.slide-col-2 {
+		width: 100%;
+	}
+}
+
+
+/* =============================================
+* SOLUCIONES
+* ============================================== */
+#soluciones {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+/* =============================================
+* PRODUCTOS
+* ============================================== */
+#productos {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+/* =============================================
+* TANQUES ALMACENAMIENTO
+* ============================================== */
+#tanques-almacenamiento {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+/* =============================================
+* APLICACIONES
+* ============================================== */
+#aplicaciones {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+/* =============================================
+* RAZONES
+* ============================================== */
+#razones {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+/* =============================================
+* FAQS
+* ============================================== */
+#faqs {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	background: #dddddd;
+}
+
+.faqs-titulo {
+	color: #236192;
+	font-size: 20px;
+	cursor: pointer;
+	font-weight: bold;
+	justify-content: space-between;
+	margin-top: 0;
+	margin-bottom: 0;
+}

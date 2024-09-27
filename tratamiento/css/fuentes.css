@@ -1,0 +1,55 @@
+@font-face {
+	font-family: rotoplas_bold;
+	src: url('fonts/rotoplas_bold/rotoplas_bold_webfont.woff2') format('woff2'), url('fonts/rotoplas_bold/rotoplas_bold_webfont.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: rotoplas_regular;
+	src: url('fonts/rotoplas_regular/rotoplas_regular_webfont.woff2') format('woff2'), url('fonts/rotoplas_regular/rotoplas_regular_webfont.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family: rotoplas_light;
+	src: url('fonts/rotoplas_light/rotoplas_light_webfont.woff2') format('woff2'), url('fonts/rotoplas_light/rotoplas_light_webfont.woff') format('woff');
+	font-display: swap;
+}
+
+.bold { 
+	font-family: rotoplas_bold;
+}
+.regular { 
+	font-family: rotoplas_regular;
+}
+.light { 
+	font-family: rotoplas_light;
+}
+
+body { 
+	font-family: rotoplas_regular, sans-serif !important;
+	color: #002554;
+}
+
+/* ==============================================================
+/*	TAMAÑOS DE FUENTES
+/* ============================================================== */
+.fs-12 { font-size: 12px; }
+.fs-14 { font-size: 14px; }
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+.fs-20 { font-size: 20px; }
+.fs-24 { font-size: 24px; }
+.fs-28 { font-size: 28px; }
+.fs-30 { font-size: 30px; }
+.fs-32 { font-size: 32px; }
+.fs-35 { font-size: 35px; }
+.fs-40 { font-size: 40px; }
+.fs-42 { font-size: 42px; }
+.fs-48 { font-size: 48px; }
+.fs-50 { font-size: 50px; }
+.fs-60 { font-size: 60px; }
+.fs-80 { font-size: 80px; }
+
+.lhn { line-height: normal; }
+.center { text-align: center; }
+.right { text-align: right; }
+.left { text-align: left; }

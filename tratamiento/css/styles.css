@@ -1,0 +1,297 @@
+@import "/tratamiento/css/colores.css";
+@import "/tratamiento/css/fuentes.css";
+
+
+/* =============================================
+* GENERAL
+* ============================================== */
+	a {
+		text-decoration: none;
+		transition: all ease .3s;
+	}
+	a:hover {
+		color: #009cde;
+	}
+	a:hover .menu_vineta {
+		transform: rotate(180deg);
+	}
+
+	a span {
+		vertical-align: middle;
+	}
+
+	.rtp-btn {
+		display: inline-block;
+		border-radius: 2rem;
+		padding: 6px 16px;
+	}
+
+	.rtp-btn-azul {
+		background: #002554;
+		color: #fff;
+	}
+	.rtp-btn-azul:hover {
+		background: #236192;
+		color: #fff;
+	}
+
+	.rtp-btn-azul-2 {
+		background: #009cde;
+		color: #fff;
+	}
+	.rtp-btn-azul-2:hover {
+		background: #236192;
+		color: #fff;
+	}
+
+	.rtp-btn-gris {
+		background: #e5e5e5;
+		color: #002554;
+	}
+	.rtp-btn-gris:hover {
+		background: #002554;
+		color: #fff;
+	}
+/**/
+
+
+/* =============================================
+* NAVEGACION
+* ============================================== */
+	#menu_contenedor {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		transition: top ease .3s;
+		box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+		padding: 1rem 6rem;
+		z-index: 9999;
+	}
+
+	#menu_contenedor ul { 
+		list-style:none;  
+		margin: 0; 
+		padding: 0;
+	}
+
+	#menu_principal > li > a {
+		color: #fff;
+	}
+	#menu_principal > li > a:hover {
+		color: #009cde;
+	}
+
+	.menu_icono {
+		fill: #009cde;
+		width: 16px;
+		display: inline-block;
+	}
+
+	.menu_vineta {
+		fill: #009cde;
+		width: 16px;
+		transition: all ease .3s;
+	}
+
+	.submenu_contenido {
+		position:absolute;
+		width:100%;
+		height: calc(100vh);
+		top: 0;
+		left: 0;
+		display: none;
+		background: #fff;
+	}
+
+	.submenu_contenido_titulo {
+		font-size: 50px;
+		line-height: normal;
+	}
+
+	.submenu_contenido div > a {
+		font-size: 20px;
+	}
+
+	.submenu_contenido ul li a {
+		color: #002554;
+		display: flex;
+		gap: .5rem;
+		line-height: normal;
+		align-items: flex-start;
+		margin: .5rem 0;
+	}
+	.submenu_contenido ul li a:hover {
+		color: #009cde;
+	}
+	.submenu_contenido ul li a img {
+		width: 16px;
+	}
+
+	.submenu_contenido_cerrar {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		padding: .5rem;
+		transition: all ease .3s;
+	}
+	.submenu_contenido_cerrar:hover {
+		background-color: #236192;
+	}
+	.submenu_contenido_cerrar_icono {
+		fill: #fff;
+	}
+
+	@media screen and (max-width: 768px) {
+		#menu_contenedor {
+			padding: 1rem;
+		}
+	}
+
+	@media screen and (max-width: 576px) {
+		#menu_principal {
+			position: absolute;
+			top: 92px;
+			left: -100%;
+			width: 100%;
+			padding: 1rem !important;
+			background: #fff;
+			flex-direction: column;
+		}
+
+		#menu_principal > li > a {
+			color: #002554;
+			font-size: 20px;
+		}
+
+		.submenu_contenido {
+			position: relative;
+			height: auto;
+		}
+
+		.submenu_contenido div > a {
+			font-size: 18px;
+		}
+	}
+/*** navegacion ***/
+
+
+/* =============================================
+* FOOTER
+* ============================================== */
+	footer {
+		padding: 2rem 6rem !important;
+	}
+
+	footer a {
+		color: #fff;
+		transition: all ease .3s;
+	}
+	footer a:hover {
+		color: #009cde;
+	}
+
+
+	@media screen and (max-width: 768px) {
+		footer {
+			padding: 1rem !important;
+		}
+	}
+/*** footer ***/
+
+
+/* =============================================
+* HOVER
+* ============================================== */
+	.hvr-forward {
+		transition: all ease .3s;
+	}
+	.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+		-webkit-transform: translateX(5px);
+		transform: translateX(5px);
+	}
+
+	.hvr-float {
+		transition: all ease .3s;
+	}
+	.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+/*** hvr ***/
+
+.texto {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.productos {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.row_space {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+
+.titulo {
+	font-size: 30px;
+}
+
+.producto_nodo {
+	width: 20%;
+}
+
+@media screen and (max-width: 992px) {
+	.producto_nodo {
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.producto_nodo {
+		width: 50%;
+	}
+}
+
+
+.banner_contenido {
+	position: absolute;
+	left: 0;
+}
+
+
+#beneficios {
+	background: url(/tratamiento/imgs/general/beneficios-fondo.jpg) no-repeat #75a186;
+	background-position: bottom right;
+}
+
+#variedad {
+	background: url(/tratamiento/imgs/general/variedad-fondo.jpg) no-repeat #122a74;
+	background-position: top left;
+}
+
+
+#esquema {
+	background: url(/tratamiento/imgs/general/fondo-instalacion-01.jpg) no-repeat #082e75;
+	/* background-size: 100% 100%; */
+	background-position: bottom right;
+}
+
+#pasos {
+	background: url(/tratamiento/imgs/general/fondo-instalacion-02.jpg) no-repeat #7fa991;
+	/* background-size: 100% 100%; */
+	background-position: top right;
+
+	padding-top: 10rem;
+	padding-bottom: 6rem;
+}
+
+#pasos-sencillo {
+	background: url(/tratamiento/imgs/general/pasos-sencillo.jpg) no-repeat #132b75;
+	background-position: bottom right;
+
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}

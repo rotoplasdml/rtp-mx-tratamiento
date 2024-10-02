@@ -19,7 +19,153 @@
 </head>
 <body>
 	<!-- navegación -->
-	<div id="menu_contenedor" class="bg-blue5 d-flex justify-content-between align-items-center" w3-include-html="/tratamiento/components/menu.html"></div>
+	<div id="menu_contenedor" -w3-include-html="/tratamiento/components/menu.html" class="bg-blue5 d-flex justify-content-between align-items-center">
+		<!-- logotipo -->
+		<div id="menu_logo">
+			<a href="/tratamiento/"><img src="/tratamiento/imgs/rotoplas_logo_blanco_azul.svg" width="150" alt="Logotipo" title="Rotoplas"></a>
+		</div>
+		<!-- boton menu movil -->
+		<div id="menu_barra_label" class="d-sm-none d-flex ms-auto gap-2 justify-content-center align-items-center text-white">
+			<svg style="width: 20px; fill: #fff;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+				<path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+			</svg>
+			<span>MENU</span>
+		</div>
+		<!-- menu principal -->
+		<ul id="menu_principal" class="d-flex gap-3">
+			<li id="submenu_productos" class="submenu">
+				<a href="#">
+					<svg class="menu_icono" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 11" xml:space="preserve">
+						<path class="st0" d="M8.1,11H1.7C0.8,11,0,10.2,0,9.3V3.7C0,3.3,0.2,3,0.6,2.8L2.3,2l0.3-1.5C2.6,0.2,2.8,0,3.1,0h3.8
+						C7,0,7.2,0.2,7.3,0.4l0.3,1.5l1.7,0.8c0.3,0.2,0.6,0.5,0.6,0.9v5.6C9.9,10.2,9.1,11,8.1,11z M3.4,1L3.1,2.3c0,0.1-0.1,0.3-0.3,0.3
+						L1,3.6c0,0,0,0,0,0.1v5.6C1,9.7,1.3,10,1.7,10h6.4c0.4,0,0.8-0.3,0.8-0.8V3.7V3.6L7,2.7C6.9,2.6,6.8,2.5,6.7,2.3L6.4,1H3.4z"/>
+					</svg>
+					<span>Productos</span>
+					<svg class="menu_vineta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/>
+					</svg>
+				</a>
+				<!-- submenu productos -->
+				<div class="submenu_contenido">
+					<div class="h-100 d-flex align-items-center">
+						<div class="container">
+							<div class="row">
+								<!-- titulo -->
+								<div class="d-none d-sm-block col-6 mb-3">
+									<h2 class="submenu_contenido_titulo light">Productos</h2>
+								</div>
+								<!-- cerrar -->
+								<div class="d-none d-sm-block col-6 text-end">
+									<span class="submenu_contenido_cerrar bg-blue2 d-inline-flex justify-content-center align-items-center" role="button">
+										<svg class="submenu_contenido_cerrar_icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+											<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+										</svg>
+									</span>
+								</div>
+								<!-- columnas -->
+								<div class="col-12 | col-sm-6 | col-lg-3">
+									<a class="bold blue5" href="/tratamiento/tratamiento-primario/">Tratamiento Primario</a>
+									<ul>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/tratamiento-primario/biodigestor-autolimpiable/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												<span>Biodigestor Autolimpiable</span>
+											</a>
+										</li>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/tratamiento-primario/biodigestor-resistec/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												<span>Biodigestor Resistec</span>
+											</a>
+										</li>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/tratamiento-primario/biodigestor-plus/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												<span>Biodigestor Plus+</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-12 | col-sm-6 | col-lg-3">
+									<a class="bold blue5" href="/tratamiento/tratamiento-secundario/">Tratamientos Secundarios</a>
+									<ul>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/tratamiento-secundario/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												<span>Planta de tratamiento de agua residual compacta BioFlow Residencial</span>
+											</a>
+										</li>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/tratamiento-secundario/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												Planta de tratamiento de agua residual compacta BioFlow Pro
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-12 | col-sm-6 | col-lg-3">
+									<a class="bold blue5" href="/tratamiento/sistemas-de-saneamiento/">Sistemas de Saneamiento</a>
+									<ul>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/sistemas-de-saneamiento/bano-humedo-sencillo/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												Baño Húmedo Sencillo
+											</a>
+										</li>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/sistemas-de-saneamiento/bano-humedo-doble/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												Baño Húmedo Doble
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-12 | col-sm-6 | col-lg-3">
+									<a class="bold blue5" href="/tratamiento/accesorios/">Accesorios</a>
+									<ul>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/accesorios/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												Registro de Lodos
+											</a>
+										</li>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/accesorios/trampa-de-grasas/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												Trampa de Grasas
+											</a>
+										</li>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/accesorios/registro-sanitario/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												Registros Sanitarios
+											</a>
+										</li>
+										<li>
+											<a class="hvr-forward" href="/tratamiento/accesorios/coladeras-y-empaques/">
+												<img src="/tratamiento/imgs/iconos/menu-vineta.svg" alt="icono">
+												Coladeras y empaques
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="#">
+					<svg class="menu_icono" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 9" xml:space="preserve">
+						<path class="st0" d="M9.3,0H1.5C0.7,0,0,0.7,0,1.5v5.9c0,0.8,0.7,1.5,1.5,1.5h7.9c0.8,0,1.5-0.7,1.5-1.5V1.5C10.8,0.7,10.1,0,9.3,0z
+						M1.5,1h7.9c0.2,0,0.4,0.1,0.4,0.3L5.4,4.4L1,1.3C1.1,1.1,1.3,1,1.5,1z M9.3,7.9H1.5C1.2,7.9,1,7.7,1,7.4v-5l4.1,2.9
+						c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1l4.1-2.9v5C9.8,7.7,9.6,7.9,9.3,7.9z"/>
+					</svg>
+					<span>Contacto</span>
+				</a>
+			</li>
+		</ul>
+	</div>
 	<!-- main -->
 	<div class="container-fluid">
 		<!-- espacio -->

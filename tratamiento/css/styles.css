@@ -279,6 +279,12 @@
 	background-position: bottom right;
 }
 
+#esquema-biodigestor-plus {
+	background: url(/tratamiento/imgs/general/esquema-biodigestor-plus.svg) no-repeat #082e75;
+	background-size: cover;
+	background-position: bottom right;
+}
+
 #pasos {
 	background: url(/tratamiento/imgs/general/fondo-instalacion-02.jpg) no-repeat #7fa991;
 	/* background-size: 100% 100%; */

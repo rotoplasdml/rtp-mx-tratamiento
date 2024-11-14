@@ -190,6 +190,15 @@
 		color: #009cde;
 	}
 
+	.iconos-sociales {
+		height: 30px;
+		fill: #fff;
+		transition: all ease .3s;
+	}
+	.iconos-sociales:hover {
+		fill: #009cde;
+	}
+
 
 	@media screen and (max-width: 768px) {
 		footer {

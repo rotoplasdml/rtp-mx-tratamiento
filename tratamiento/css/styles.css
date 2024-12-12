@@ -20,7 +20,12 @@
 		vertical-align: middle;
 	}
 
+	.transicion {
+		transition: all ease .3s;
+	}
+
 	.rtp-btn {
+		border: none;
 		display: inline-block;
 		border-radius: 2rem;
 		padding: 6px 16px;
@@ -309,4 +314,21 @@
 
 	padding-top: 4rem;
 	padding-bottom: 4rem;
+}
+
+
+
+/* =============================================
+* CONTACTO
+* ============================================== */
+form .error {
+    color: red;
+	font-size: 14px;
+}
+
+#contacto_formulario {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	background: url(/tratamiento/imgs/contacto/contacto-fondo.jpg) no-repeat #132b75;
+	background-position: bottom right;
 }

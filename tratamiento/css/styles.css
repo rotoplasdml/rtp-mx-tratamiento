@@ -332,3 +332,23 @@ form .error {
 	background: url(/tratamiento/imgs/contacto/contacto-fondo.jpg) no-repeat #132b75;
 	background-position: bottom right;
 }
+
+
+
+/* =============================================
+* VIDEO 
+* ============================================== */
+.video-contenedor {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 (divide 9 entre 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-contenedor iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
